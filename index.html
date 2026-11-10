@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Dew Downloader - Download supported media files easily.">
+  <title>Dew Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="#">DEW<span>DOWNLOADER</span></a>
+  <span class="tag">FAST • SIMPLE • CLEAN</span>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-label">YOUR MEDIA DOWNLOAD SPACE</div>
+    <h1>Download <span>Anything.</span></h1>
+    <p>Save supported media files with a simple and professional experience.</p>
+  </section>
+
+  <section class="download-card">
+    <div class="tabs">
+      <button class="tab active" data-mode="MP4">VIDEO MP4</button>
+      <button class="tab" data-mode="MP3">AUDIO MP3</button>
+    </div>
+
+    <label for="mediaUrl">Paste your media link</label>
+    <input id="mediaUrl" type="url" placeholder="https://example.com/video.mp4">
+
+    <label for="quality">Quality</label>
+    <select id="quality">
+      <option value="original">Original Quality</option>
+    </select>
+
+    <button id="downloadBtn" class="download-btn">
+      <span>↓</span> Download Now
+    </button>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <p class="notice">
+      Direct media files only. Original quality depends on the source.
+      This website does not bypass platform restrictions or convert video to audio.
+    </p>
+  </section>
+
+  <section class="history-section">
+    <div class="history-heading">
+      <h2>Download History</h2>
+      <button id="clearHistory" class="clear-btn">Clear All</button>
+    </div>
+    <div id="historyList"></div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <span>⚡</span>
+      <h3>Fast Access</h3>
+      <p>Simple direct-media links.</p>
+    </div>
+    <div class="feature">
+      <span>🎬</span>
+      <h3>MP4 Support</h3>
+      <p>Supported video formats.</p>
+    </div>
+    <div class="feature">
+      <span>🎵</span>
+      <h3>MP3 Support</h3>
+      <p>Direct audio file links.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Dew Downloader. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+    </html>
+    
