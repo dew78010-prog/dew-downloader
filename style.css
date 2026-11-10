@@ -1,0 +1,258 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080d18;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  max-width: 950px;
+  margin: auto;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #16e0b0;
+}
+
+.tag {
+  color: #8998ad;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 760px;
+  margin: 65px auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.hero-label {
+  color: #16e0b0;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 17px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 13px;
+}
+
+.hero h1 span {
+  color: #16e0b0;
+}
+
+.hero p {
+  color: #99a9bd;
+  line-height: 1.6;
+}
+
+.download-card {
+  background: #111a2b;
+  border: 1px solid #26364d;
+  padding: 26px;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px #0007;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tab {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #34435a;
+  border-radius: 10px;
+  background: #172238;
+  color: #bdc9d9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #123d3a;
+  color: #21e5b5;
+  border-color: #16d9a8;
+}
+
+label {
+  display: block;
+  color: #c5d0df;
+  margin: 17px 0 9px;
+  font-size: 14px;
+}
+
+input, select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  background: #091322;
+  border: 1px solid #34435a;
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus, select:focus {
+  border-color: #16e0b0;
+}
+
+.download-btn {
+  width: 100%;
+  margin-top: 23px;
+  padding: 17px;
+  border: 0;
+  border-radius: 11px;
+  background: linear-gradient(100deg, #13d9a8, #2587ff);
+  color: #06131d;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #16d9a844;
+}
+
+.status {
+  text-align: center;
+  color: #20e4b2;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.notice {
+  font-size: 12px;
+  color: #91a2b9;
+  margin-top: 17px;
+  line-height: 1.7;
+}
+
+.history-section {
+  margin-top: 35px;
+}
+
+.history-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.history-heading h2 {
+  font-size: 20px;
+}
+
+.clear-btn {
+  background: none;
+  border: 0;
+  color: #ff8181;
+  cursor: pointer;
+}
+
+.history-item {
+  background: #172238;
+  border: 1px solid #26364d;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+  color: #bdc9d9;
+  font-size: 13px;
+}
+
+.history-item a {
+  color: #20e4b2;
+  text-decoration: none;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.feature {
+  background: #111a2b;
+  border: 1px solid #26364d;
+  border-radius: 13px;
+  padding: 18px 12px;
+  text-align: center;
+}
+
+.feature span {
+  font-size: 25px;
+}
+
+.feature h3 {
+  font-size: 14px;
+  margin: 12px 0 7px;
+}
+
+.feature p {
+  color: #8998ad;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  color: #66758b;
+  font-size: 12px;
+  margin: 45px 0 15px;
+}
+
+@media (max-width: 500px) {
+  main {
+    margin: 45px auto;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .download-card {
+    padding: 18px;
+  }
+
+  .features {
+    gap: 7px;
+  }
+
+  .feature {
+    padding: 15px 7px;
+  }
+
+  .tag {
+    font-size: 9px;
+  }
+}
